@@ -1,0 +1,18 @@
+# Project-level Streamlit configuration.
+#
+# headless = true is what suppresses the first-run "Welcome to Streamlit" email
+# prompt: in non-headless mode Streamlit blocks waiting for an email address on
+# stdin, which hangs a double-click launcher. The launchers open the browser
+# themselves once the server is up, so nothing is lost.
+#
+# The port is pinned so the launcher always opens the right address.
+
+[browser]
+gatherUsageStats = false
+
+[server]
+headless = true
+port = 8501
+
+[theme]
+base = "light"
